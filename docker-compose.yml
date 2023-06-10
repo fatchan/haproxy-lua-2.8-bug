@@ -4,7 +4,7 @@ services:
     network_mode: host
     ports:
       - 8080:8080
-    image: haproxy:2.8
+    image: haproxy:2.7
     volumes:
       - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
       - ./scripts/:/usr/local/etc/haproxy/scripts/
